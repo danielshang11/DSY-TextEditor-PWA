@@ -20,11 +20,11 @@ module.exports = () => {
     plugins: [
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js'
+        swDest: 'src-sw.js',
       }),
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'J.A.T.E'
+        title: 'J.A.T.E',
       }),
       new WebpackPwaManifest({
         fingerprints: false,
